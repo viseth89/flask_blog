@@ -5,7 +5,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////var/www/FlaskApp/FlaskApp/blog.db'
-
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////var/www/FlaskApp/FlaskApp/blog.db'
 db = SQLAlchemy(app)
 
 class Blogpost(db.Model):
